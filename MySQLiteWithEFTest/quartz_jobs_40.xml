@@ -1,0 +1,823 @@
+﻿<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+
+	<processing-directives>
+		<overwrite-existing-data>true</overwrite-existing-data>
+	</processing-directives>
+	<schedule>
+
+
+		<job>
+			<name>AddJob_1_1</name>
+			<group>AddJob_1_1Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_1Trigger</name>
+				<group>AddJob_1_1TriggerGroup</group>
+				<job-name>AddJob_1_1</job-name>
+				<job-group>AddJob_1_1Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_2</name>
+			<group>AddJob_1_2Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_2Trigger</name>
+				<group>AddJob_1_2TriggerGroup</group>
+				<job-name>AddJob_1_2</job-name>
+				<job-group>AddJob_1_2Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_3</name>
+			<group>AddJob_1_3Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_3Trigger</name>
+				<group>AddJob_1_3TriggerGroup</group>
+				<job-name>AddJob_1_3</job-name>
+				<job-group>AddJob_1_3Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_4</name>
+			<group>AddJob_1_4Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_4Trigger</name>
+				<group>AddJob_1_4TriggerGroup</group>
+				<job-name>AddJob_1_4</job-name>
+				<job-group>AddJob_1_4Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_5</name>
+			<group>AddJob_1_5Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_5Trigger</name>
+				<group>AddJob_1_5TriggerGroup</group>
+				<job-name>AddJob_1_5</job-name>
+				<job-group>AddJob_1_5Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_6</name>
+			<group>AddJob_1_6Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_6Trigger</name>
+				<group>AddJob_1_6TriggerGroup</group>
+				<job-name>AddJob_1_6</job-name>
+				<job-group>AddJob_1_6Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_7</name>
+			<group>AddJob_1_7Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_7Trigger</name>
+				<group>AddJob_1_7TriggerGroup</group>
+				<job-name>AddJob_1_7</job-name>
+				<job-group>AddJob_1_7Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_8</name>
+			<group>AddJob_1_8Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_8Trigger</name>
+				<group>AddJob_1_8TriggerGroup</group>
+				<job-name>AddJob_1_8</job-name>
+				<job-group>AddJob_1_8Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_9</name>
+			<group>AddJob_1_9Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_9Trigger</name>
+				<group>AddJob_1_9TriggerGroup</group>
+				<job-name>AddJob_1_9</job-name>
+				<job-group>AddJob_1_9Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_1_10</name>
+			<group>AddJob_1_10Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_1_10Trigger</name>
+				<group>AddJob_1_10TriggerGroup</group>
+				<job-name>AddJob_1_10</job-name>
+				<job-group>AddJob_1_10Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+
+
+		<job>
+			<name>AddJob_2_1</name>
+			<group>AddJob_2_1Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_1Trigger</name>
+				<group>AddJob_2_1TriggerGroup</group>
+				<job-name>AddJob_2_1</job-name>
+				<job-group>AddJob_2_1Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_2</name>
+			<group>AddJob_2_2Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_2Trigger</name>
+				<group>AddJob_2_2TriggerGroup</group>
+				<job-name>AddJob_2_2</job-name>
+				<job-group>AddJob_2_2Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_3</name>
+			<group>AddJob_2_3Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_3Trigger</name>
+				<group>AddJob_2_3TriggerGroup</group>
+				<job-name>AddJob_2_3</job-name>
+				<job-group>AddJob_2_3Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_4</name>
+			<group>AddJob_2_4Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_4Trigger</name>
+				<group>AddJob_2_4TriggerGroup</group>
+				<job-name>AddJob_2_4</job-name>
+				<job-group>AddJob_2_4Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_5</name>
+			<group>AddJob_2_5Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_5Trigger</name>
+				<group>AddJob_2_5TriggerGroup</group>
+				<job-name>AddJob_2_5</job-name>
+				<job-group>AddJob_2_5Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_6</name>
+			<group>AddJob_2_6Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_6Trigger</name>
+				<group>AddJob_2_6TriggerGroup</group>
+				<job-name>AddJob_2_6</job-name>
+				<job-group>AddJob_2_6Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_7</name>
+			<group>AddJob_2_7Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_7Trigger</name>
+				<group>AddJob_2_7TriggerGroup</group>
+				<job-name>AddJob_2_7</job-name>
+				<job-group>AddJob_2_7Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_8</name>
+			<group>AddJob_2_8Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_8Trigger</name>
+				<group>AddJob_2_8TriggerGroup</group>
+				<job-name>AddJob_2_8</job-name>
+				<job-group>AddJob_2_8Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_9</name>
+			<group>AddJob_2_9Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_9Trigger</name>
+				<group>AddJob_2_9TriggerGroup</group>
+				<job-name>AddJob_2_9</job-name>
+				<job-group>AddJob_2_9Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_2_10</name>
+			<group>AddJob_2_10Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_2_10Trigger</name>
+				<group>AddJob_2_10TriggerGroup</group>
+				<job-name>AddJob_2_10</job-name>
+				<job-group>AddJob_2_10Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+
+
+		<job>
+			<name>AddJob_3_1</name>
+			<group>AddJob_3_1Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_1Trigger</name>
+				<group>AddJob_3_1TriggerGroup</group>
+				<job-name>AddJob_3_1</job-name>
+				<job-group>AddJob_3_1Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_2</name>
+			<group>AddJob_3_2Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_2Trigger</name>
+				<group>AddJob_3_2TriggerGroup</group>
+				<job-name>AddJob_3_2</job-name>
+				<job-group>AddJob_3_2Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_3</name>
+			<group>AddJob_3_3Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_3Trigger</name>
+				<group>AddJob_3_3TriggerGroup</group>
+				<job-name>AddJob_3_3</job-name>
+				<job-group>AddJob_3_3Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_4</name>
+			<group>AddJob_3_4Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_4Trigger</name>
+				<group>AddJob_3_4TriggerGroup</group>
+				<job-name>AddJob_3_4</job-name>
+				<job-group>AddJob_3_4Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_5</name>
+			<group>AddJob_3_5Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_5Trigger</name>
+				<group>AddJob_3_5TriggerGroup</group>
+				<job-name>AddJob_3_5</job-name>
+				<job-group>AddJob_3_5Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_6</name>
+			<group>AddJob_3_6Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_6Trigger</name>
+				<group>AddJob_3_6TriggerGroup</group>
+				<job-name>AddJob_3_6</job-name>
+				<job-group>AddJob_3_6Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_7</name>
+			<group>AddJob_3_7Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_7Trigger</name>
+				<group>AddJob_3_7TriggerGroup</group>
+				<job-name>AddJob_3_7</job-name>
+				<job-group>AddJob_3_7Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_8</name>
+			<group>AddJob_3_8Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_8Trigger</name>
+				<group>AddJob_3_8TriggerGroup</group>
+				<job-name>AddJob_3_8</job-name>
+				<job-group>AddJob_3_8Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_9</name>
+			<group>AddJob_3_9Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_9Trigger</name>
+				<group>AddJob_3_9TriggerGroup</group>
+				<job-name>AddJob_3_9</job-name>
+				<job-group>AddJob_3_9Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_3_10</name>
+			<group>AddJob_3_10Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_3_10Trigger</name>
+				<group>AddJob_3_10TriggerGroup</group>
+				<job-name>AddJob_3_10</job-name>
+				<job-group>AddJob_3_10Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+
+
+		<job>
+			<name>AddJob_4_1</name>
+			<group>AddJob_4_1Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_1Trigger</name>
+				<group>AddJob_4_1TriggerGroup</group>
+				<job-name>AddJob_4_1</job-name>
+				<job-group>AddJob_4_1Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_2</name>
+			<group>AddJob_4_2Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_2Trigger</name>
+				<group>AddJob_4_2TriggerGroup</group>
+				<job-name>AddJob_4_2</job-name>
+				<job-group>AddJob_4_2Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_3</name>
+			<group>AddJob_4_3Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_3Trigger</name>
+				<group>AddJob_4_3TriggerGroup</group>
+				<job-name>AddJob_4_3</job-name>
+				<job-group>AddJob_4_3Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_4</name>
+			<group>AddJob_4_4Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_4Trigger</name>
+				<group>AddJob_4_4TriggerGroup</group>
+				<job-name>AddJob_4_4</job-name>
+				<job-group>AddJob_4_4Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_5</name>
+			<group>AddJob_4_5Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_5Trigger</name>
+				<group>AddJob_4_5TriggerGroup</group>
+				<job-name>AddJob_4_5</job-name>
+				<job-group>AddJob_4_5Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_6</name>
+			<group>AddJob_4_6Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_6Trigger</name>
+				<group>AddJob_4_6TriggerGroup</group>
+				<job-name>AddJob_4_6</job-name>
+				<job-group>AddJob_4_6Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_7</name>
+			<group>AddJob_4_7Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_7Trigger</name>
+				<group>AddJob_4_7TriggerGroup</group>
+				<job-name>AddJob_4_7</job-name>
+				<job-group>AddJob_4_7Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_8</name>
+			<group>AddJob_4_8Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_8Trigger</name>
+				<group>AddJob_4_8TriggerGroup</group>
+				<job-name>AddJob_4_8</job-name>
+				<job-group>AddJob_4_8Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_9</name>
+			<group>AddJob_4_9Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_9Trigger</name>
+				<group>AddJob_4_9TriggerGroup</group>
+				<job-name>AddJob_4_9</job-name>
+				<job-group>AddJob_4_9Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<job>
+			<name>AddJob_4_10</name>
+			<group>AddJob_4_10Group</group>
+			<description>上传历史探测数据到总署</description>
+			<job-type>MyQuartz.Job4EF.AddJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+
+		<trigger>
+			<cron>
+				<name>AddJob_4_10Trigger</name>
+				<group>AddJob_4_10TriggerGroup</group>
+				<job-name>AddJob_4_10</job-name>
+				<job-group>AddJob_4_10Group</job-group>
+
+				<cron-expression>0/1 * 0-18 * * ?</cron-expression>
+			</cron>
+		</trigger>
+
+
+		<!--<job>
+			<name>UpdateJob</name>
+			<group>UpdateJobGroup</group>
+			<description>调用入网设备接口，查询历史探测记录</description>
+			<job-type>MyQuartz.Job4EF.UpdateJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+		<trigger>
+			<cron>
+				<name>UpdateJobTrigger</name>
+				<group>UpdateJobTriggerGroup</group>
+				<job-name>UpdateJob</job-name>
+				<job-group>UpdateJobGroup</job-group>
+				<cron-expression>0/6 * * * * ?</cron-expression>
+			</cron>
+		</trigger>
+
+		<job>
+			<name>DeleteJob</name>
+			<group>DeleteJobGroup</group>
+			<description>调用入网设备接口，查询历史探测记录</description>
+			<job-type>MyQuartz.Job4EF.DeleteJob, MyQuartz</job-type>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job>
+		<trigger>
+			<cron>
+				<name>DeleteJobTrigger</name>
+				<group>DeleteJobTriggerGroup</group>
+				<job-name>DeleteJob</job-name>
+				<job-group>DeleteJobGroup</job-group>
+				<cron-expression>0/5 * * * * ?</cron-expression>
+			</cron>
+		</trigger>-->
+		
+	</schedule>
+</job-scheduling-data>
+
+<!--
+
+从 2020-09-16 08:43:41.194756 到 2020-09-15 16:37:26.511429
+共插入 997945 条数据
+平均一秒 997945/((32-16)*3600+6*60+15) = 17 条
+database lock 152 次
+
+-->
