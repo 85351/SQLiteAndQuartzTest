@@ -15,10 +15,11 @@ namespace MyQuartz.Job4EF
         static NewLogger Logger = new NewLogger(typeof(UpdateJob).FullName);
         public void Execute(IJobExecutionContext context)
         {
+            var service = new RecordQueryTempService();
             var jobName = context.JobDetail.Key.Name;
             try
             {
-                var models = RecordQueryTempService.GetAll();
+                var models = service.GetAll();
                 if (models == null)
                     return;
                 foreach (var m in models)
@@ -28,7 +29,7 @@ namespace MyQuartz.Job4EF
 
                     Console.WriteLine($"update info -job:{jobName}- {m.path}");
                     Logger.Info($"update -job:{jobName}- {m.path}");
-                    RecordQueryTempService.UpdateReasonAndCount(m.path, Guid.NewGuid().ToString());
+                    service.UpdateReasonAndCount(m.path, Guid.NewGuid().ToString());
                 }
             }
             catch (Exception ex)

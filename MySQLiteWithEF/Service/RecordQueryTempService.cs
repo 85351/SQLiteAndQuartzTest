@@ -8,52 +8,46 @@ namespace MySQLiteWithEF
 {
     public class RecordQueryTempService
     {
-        public static void Add(string path)
+        RecordQueryTempDbContext db ;
+        public RecordQueryTempService()
         {
-            using (var db = new RecordQueryTempDbContext())
-            {
-                var r = new RecordQueryTemp
-                {
-                    path = path,
-                    addTime = DateTime.Now.GetSeconds(),
-                    uploadCount = 0,
-                };
-                db.RecordQueryTemp.Add(r);
-                db.SaveChanges();
-            }
+            db = new RecordQueryTempDbContext();
         }
-        public static List<RecordQueryTemp> GetAll()
+        public void Add(string path)
         {
-            using (var db = new RecordQueryTempDbContext())
+            var r = new RecordQueryTemp
             {
-                return db.RecordQueryTemp.ToList();
-            }
+                path = path,
+                addTime = DateTime.Now.GetSeconds(),
+                uploadCount = 0,
+            };
+            db.RecordQueryTemp.Add(r);
+            db.SaveChanges();
         }
-        public static void UpdateReasonAndCount(string path, string reason)
+        public List<RecordQueryTemp> GetAll()
         {
-            using (var db = new RecordQueryTempDbContext())
-            {
-                if (!db.RecordQueryTemp.Any(i => i.path == path))
-                    return;
+            return db.RecordQueryTemp.ToList();
+        }
+        public void UpdateReasonAndCount(string path, string reason)
+        {
+            if (!db.RecordQueryTemp.Any(i => i.path == path))
+                return;
 
-                var r = db.RecordQueryTemp.Where(i => i.path == path).FirstOrDefault();
-                r.uploadCount = r.uploadCount + 1;
-                r.reason = reason;
-                db.Entry(r).State = System.Data.Entity.EntityState.Modified;
-                db.SaveChanges();
-            }
+            var r = db.RecordQueryTemp.Where(i => i.path == path).FirstOrDefault();
+            r.uploadCount = r.uploadCount + 1;
+            r.reason = reason;
+            db.Entry(r).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
         }
-        public static void Delete(string path)
+        public void Delete(string path)
         {
-            using (var db = new RecordQueryTempDbContext())
-            {
-                if (!db.RecordQueryTemp.Any(i => i.path == path))
-                    return;
+            if (!db.RecordQueryTemp.Any(i => i.path == path))
+                return;
 
-                var r = db.RecordQueryTemp.Where(i => i.path == path).FirstOrDefault();
-                db.RecordQueryTemp.Remove(r);
-                db.SaveChanges();
-            }
+            var r = db.RecordQueryTemp.Where(i => i.path == path).FirstOrDefault();
+            db.RecordQueryTemp.Remove(r);
+            db.SaveChanges();
+
         }
     }
 }

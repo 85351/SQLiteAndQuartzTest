@@ -14,12 +14,14 @@ namespace MyQuartz.Job4EF
         static NewLogger Logger = new NewLogger(typeof(AddJob).FullName);
         public void Execute(IJobExecutionContext context)
         {
+            var service = new RecordQueryTempService();
+
             var jobName = context.JobDetail.Key.Name;
             
             var path = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss.ffffff}-{jobName}-{Guid.NewGuid().ToString().Substring(0, 8)}";
             try
             {
-                RecordQueryTempService.Add(path);
+                service.Add(path);
                 Console.WriteLine($"add info {path}");
                 Logger.Info(path);
             }

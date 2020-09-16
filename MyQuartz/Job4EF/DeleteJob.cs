@@ -14,10 +14,11 @@ namespace MyQuartz.Job4EF
         static NewLogger Logger = new NewLogger(typeof(DeleteJob).FullName);
         public void Execute(IJobExecutionContext context)
         {
+            var service = new RecordQueryTempService();
             var jobName = context.JobDetail.Key.Name;
             try
             {
-                var models = RecordQueryTempService.GetAll();
+                var models = service.GetAll();
                 if (models == null)
                     return;
                 foreach (var m in models)
@@ -27,7 +28,7 @@ namespace MyQuartz.Job4EF
 
                     Console.WriteLine($"delete -job:{jobName}- info {m.path}");
                     Logger.Info($"delete -job:{jobName}- info {m.path}");
-                    RecordQueryTempService.Delete(m.path);
+                    service.Delete(m.path);
                 }
             }
             catch (Exception ex)
