@@ -11,7 +11,6 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            SQLiteHelper.InitDT();
             var job = new MyQuartz.Job();
             job.Start();
         }
